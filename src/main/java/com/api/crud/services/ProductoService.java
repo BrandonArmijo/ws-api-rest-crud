@@ -36,7 +36,7 @@ public class ProductoService {
         return producto;
     }
 
-    /* public Boolean deleteById(Long id){
+     public Boolean deleteById(Long id){
         try {
             productoRepository.deleteById(id);
             return true;
@@ -44,14 +44,8 @@ public class ProductoService {
             return false;
         }
     }
-    */
 
-    public void delete(Long id) {
-        String mensaje = "No se encontro el id : ";
-        ProductoModel producto = productoRepository.findById(id)
-                .orElseThrow(() -> new message + (id);
 
-        productoRepository.deleteById(id);
-    }
+
 
 }

@@ -35,7 +35,7 @@ public class ProductoController {
         return this.productoService.updateById(request, id);
     }
 
-    /* @DeleteMapping(path = "/{id}")
+    @DeleteMapping(path = "/{id}")
     public String deleteById(@PathVariable("id") Long id){
         boolean ok = this.productoService.deleteById(id);
 
@@ -45,6 +45,6 @@ public class ProductoController {
             return "Error; no se pudo eliminar el producto";
         }
     }
-*/
+
 
 }
